@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiendy - La App para Tiendas de Abarrotes en CDMX</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Apply Inter font globally */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Simple animation for feature cards */
+        .feature-card:hover {
+            transform: translateY(-5px);
+            transition: transform 0.3s ease-in-out;
+        }
+        /* Style for hero section background */
+        .hero-bg {
+             /* Placeholder gradient - replace with an image if desired */
+            background: linear-gradient(to right, #6366f1, #8b5cf6);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <div class="text-2xl font-bold text-indigo-600">Tiendy</div>
+            <div>
+                <a href="#features" class="text-gray-600 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium">Características</a>
+                <a href="#how-it-works" class="text-gray-600 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium">Cómo Funciona</a>
+                <a href="#cta" class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-md text-sm font-medium ml-4">Descargar App</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero-bg text-white pt-20 pb-24">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4 leading-tight">Moderniza tu Tienda de Abarrotes con Tiendy</h1>
+            <p class="text-lg md:text-xl mb-8 text-indigo-100">Escanea, cobra, controla tu inventario y haz crecer tu negocio en la CDMX. ¡Todo desde tu celular!</p>
+            <div class="flex justify-center space-x-4">
+                 <a href="#cta" class="bg-white text-indigo-600 font-semibold py-3 px-6 rounded-lg shadow-md hover:bg-gray-100 transition duration-300">
+                    Comienza Ahora
+                 </a>
+                 <a href="#features" class="bg-transparent border-2 border-white text-white font-semibold py-3 px-6 rounded-lg hover:bg-white hover:text-indigo-600 transition duration-300">
+                    Ver Características
+                 </a>
+            </div>
+             <div class="mt-12">
+                <img src="https://placehold.co/600x400/ffffff/333333?text=App+en+Teléfono" alt="App Tiendy en un teléfono" class="mx-auto rounded-lg shadow-xl" style="max-width: 400px;" onerror="this.onerror=null; this.src='https://placehold.co/600x400/e2e8f0/94a3b8?text=Imagen+no+disponible';">
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Todo lo que necesitas para tu tienda</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="feature-card bg-gray-50 p-6 rounded-lg shadow-md border border-gray-200">
+                     <div class="mb-4 text-indigo-500">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v1m6 11h2m-6 0h-2v4m-1.33-11.333l-4-4M4 16v1m1-6.333L5.667 16M4 8h1m11 1.333L19.333 8M12 20v-4m1.333-7.333l4 4M8 4H7m8 16h1" />
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3 6a1 1 0 011-1h16a1 1 0 011 1v12a1 1 0 01-1 1H4a1 1 0 01-1-1V6z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2 text-center">Cobro Rápido con Código de Barras</h3>
+                    <p class="text-gray-600 text-center">Usa la cámara de tu celular para escanear productos y agilizar el proceso de cobro. ¡Adiós a las largas filas!</p>
+                </div>
+
+                <div class="feature-card bg-gray-50 p-6 rounded-lg shadow-md border border-gray-200">
+                     <div class="mb-4 text-indigo-500">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2 text-center">Control de Inventario Fácil</h3>
+                    <p class="text-gray-600 text-center">Lleva un registro actualizado de tus productos, evita faltantes y optimiza tus compras.</p>
+                </div>
+
+                <div class="feature-card bg-gray-50 p-6 rounded-lg shadow-md border border-gray-200">
+                     <div class="mb-4 text-indigo-500">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2 text-center">Gestión de Fiado Inteligente</h3>
+                    <p class="text-gray-600 text-center">Administra las cuentas de tus clientes de confianza, registra pagos y lleva un control claro de las deudas.</p>
+                </div>
+
+                <div class="feature-card bg-gray-50 p-6 rounded-lg shadow-md border border-gray-200">
+                     <div class="mb-4 text-indigo-500">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2 text-center">Reportes de Ventas Detallados</h3>
+                    <p class="text-gray-600 text-center">Analiza tus ventas por día, mes o año. Compara periodos y entiende el rendimiento de tu negocio.</p>
+                </div>
+
+                 <div class="feature-card bg-gray-50 p-6 rounded-lg shadow-md border border-gray-200">
+                     <div class="mb-4 text-indigo-500">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.539 1.118l-3.975-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.196-1.539-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2 text-center">Identifica Productos Estrella</h3>
+                    <p class="text-gray-600 text-center">Descubre cuáles son tus productos más vendidos en diferentes periodos y toma decisiones informadas.</p>
+                </div>
+
+                 <div class="feature-card bg-gray-50 p-6 rounded-lg shadow-md border border-gray-200">
+                     <div class="mb-4 text-indigo-500">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3-.895 3-2-1.343-2-3-2z" clip-rule="evenodd" fill-rule="evenodd" /> </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2 text-center">Sugerencias de Precios Inteligentes</h3>
+                    <p class="text-gray-600 text-center">Recibe recomendaciones de precios basadas en tu ubicación geográfica en la CDMX para mantenerte competitivo.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="how-it-works" class="py-16 md:py-24 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Empezar es muy fácil</h2>
+            <div class="flex flex-col md:flex-row justify-center items-center md:space-x-12 space-y-8 md:space-y-0">
+                <div class="text-center max-w-xs">
+                    <div class="bg-indigo-500 text-white rounded-full h-16 w-16 flex items-center justify-center mx-auto mb-4 text-2xl font-bold">1</div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Descarga la App</h3>
+                    <p class="text-gray-600">Busca "Tiendy" en tu tienda de aplicaciones y descárgala gratis.</p>
+                     <img src="https://placehold.co/300x200/e0e7ff/4f46e5?text=Paso+1" alt="Descargar App" class="mt-4 mx-auto rounded-lg shadow-md" onerror="this.onerror=null; this.src='https://placehold.co/300x200/e2e8f0/94a3b8?text=Imagen+no+disponible';">
+                </div>
+                <div class="text-center max-w-xs">
+                     <div class="bg-indigo-500 text-white rounded-full h-16 w-16 flex items-center justify-center mx-auto mb-4 text-2xl font-bold">2</div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Registra tu Tienda</h3>
+                    <p class="text-gray-600">Ingresa los datos básicos de tu negocio y configura tu inventario inicial.</p>
+                     <img src="https://placehold.co/300x200/e0e7ff/4f46e5?text=Paso+2" alt="Registrar Tienda" class="mt-4 mx-auto rounded-lg shadow-md" onerror="this.onerror=null; this.src='https://placehold.co/300x200/e2e8f0/94a3b8?text=Imagen+no+disponible';">
+                </div>
+                <div class="text-center max-w-xs">
+                     <div class="bg-indigo-500 text-white rounded-full h-16 w-16 flex items-center justify-center mx-auto mb-4 text-2xl font-bold">3</div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">¡Comienza a Vender!</h3>
+                    <p class="text-gray-600">Escanea productos, registra ventas y disfruta de un control total sobre tu tienda.</p>
+                     <img src="https://placehold.co/300x200/e0e7ff/4f46e5?text=Paso+3" alt="Empezar a Vender" class="mt-4 mx-auto rounded-lg shadow-md" onerror="this.onerror=null; this.src='https://placehold.co/300x200/e2e8f0/94a3b8?text=Imagen+no+disponible';">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Lo que dicen nuestros usuarios</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md border border-gray-200">
+                    <p class="text-gray-600 mb-4 italic">"Tiendy me ha ahorrado muchísimo tiempo en el cobro y ahora sé exactamente qué productos tengo. ¡Indispensable para mi tiendita en Iztapalapa!"</p>
+                    <p class="font-semibold text-gray-800">- María G.</p>
+                    <p class="text-sm text-gray-500">Dueña de Abarrotes "La Esperanza"</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md border border-gray-200">
+                    <p class="text-gray-600 mb-4 italic">"El control de fiado es genial. Antes lo llevaba en una libreta y era un caos. Con Tiendy, todo está organizado y los reportes de venta me ayudan a planificar mejor."</p>
+                    <p class="font-semibold text-gray-800">- Carlos R.</p>
+                    <p class="text-sm text-gray-500">Dueño de Miscelánea "El Sol"</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="cta" class="py-16 md:py-24 bg-indigo-700 text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">¿Listo para transformar tu tienda?</h2>
+            <p class="text-lg md:text-xl mb-8 text-indigo-100">Descarga Tiendy hoy mismo y lleva tu negocio de abarrotes al siguiente nivel.</p>
+            <div class="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-4">
+                <a href="#" class="bg-white text-indigo-700 font-semibold py-3 px-8 rounded-lg shadow-md hover:bg-gray-100 transition duration-300 flex items-center space-x-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M7 1.045c.12-.18.266-.348.43-.5.17-.15.35-.286.54-.405.18-.11.38-.198.58-.26C9.13 0 9.6 0 10.33 0h3.34c.72 0 1.2.002 1.78.08.2.027.39.074.58.14.19.06.37.14.54.244.17.1.33.21.48.336.14.12.27.25.39.39.24.27.43.58.56 1.01.08.29.1 1.1.1 1.7v14.04c0 .6 0 1.4-.09 1.7-.13.43-.32.74-.56 1.01-.12.14-.25.27-.39.39-.15.12-.31.23-.48.33-.17.1-.35.18-.54.24-.19.06-.38.11-.58.14-.58.08-1.06.08-1.78.08h-3.34c-.73 0-1.2-.002-1.78-.08-.2-.027-.39-.074-.58-.14-.19-.06-.37-.14-.54-.24-.17-.1-.33-.22-.48-.33-.14-.12-.27-.25-.39-.39-.24-.27-.43-.58-.56-1.01-.09-.3-.09-1.1-.09-1.7V2.785c0-.6.002-1.41.1-1.7.13-.43.32-.74.56-1.01.12-.14.25-.27.39-.39zm4.87 16.96c.5 0 .9-.4.9-.9s-.4-.9-.9-.9-.9.4-.9.9.4.9.9.9zM12 4.17c-2.8 0-5.1 2.3-5.1 5.13 0 1.5.6 2.8 1.6 3.8l.1.1c.3.3.6.5.8.7.5.4 1.1.7 1.7.9v1.4c0 .4.3.7.7.7s.7-.3.7-.7v-1.4c.6-.2 1.2-.5 1.7-.9.2-.2.5-.4.8-.7l.1-.1c1-.9 1.6-2.2 1.6-3.8 0-2.83-2.3-5.13-5.1-5.13zm0 1.4c1.9 0 3.4 1.6 3.4 3.73 0 1.4-.7 2.5-1.8 3.3-.6.5-1.2.8-1.6.9-.4-.1-1-.4-1.6-.9-1.1-.8-1.8-1.9-1.8-3.3 0-2.13 1.5-3.73 3.4-3.73z"/></svg> <span>Descargar en App Store</span>
+                </a>
+                <a href="#" class="bg-white text-indigo-700 font-semibold py-3 px-8 rounded-lg shadow-md hover:bg-gray-100 transition duration-300 flex items-center space-x-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M21.4 11.54l-10-6.4c-.4-.2-.9-.2-1.3 0l-10 6.4C.1 11.6 0 11.8 0 12s.1.4.4.5l10 6.4c.2.1.4.2.6.2s.4-.1.6-.2l10-6.4c.3-.2.4-.3.4-.5s-.1-.4-.4-.5zM11 4.7l8.2 5.2-4.3 2.7-8.2-5.2 4.3-2.7zM3.8 13.1L12 18.3l8.2-5.2-8.2 5.2-8.2-5.2zm-.2-1.6L12 6.3l8.4 5.2-4.4 2.8-4-2.5L3.6 11.5z"/></svg> <span>Descargar en Google Play</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 text-gray-400 py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2025 Tiendy. Todos los derechos reservados.</p>
+            <p class="text-sm mt-2">Hecho con ❤️ para las tiendas de la CDMX.</p>
+            <div class="mt-4 space-x-4">
+                <a href="#" class="hover:text-white">Política de Privacidad</a>
+                <a href="#" class="hover:text-white">Términos de Servicio</a>
+                <a href="#" class="hover:text-white">Contacto</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
